@@ -317,7 +317,8 @@ public class HexGridStandalone {
         return out;
     }
 
-    // 尖朝上 pointy-top 六边形（保留原逻辑）
+    // 尖朝上 pointy-top 六边形（保留原逻辑） 
+    // NOTE: 用于生成尖朝上的六边形
     static Polygon hexPolygonPointyTop(GeometryFactory gf, Coordinate center, double a) {
         Coordinate[] pts = new Coordinate[7];
         for (int i = 0; i < 6; i++) {
